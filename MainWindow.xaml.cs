@@ -64,7 +64,7 @@ namespace Laba4TechWPF
                 'Е' => 'Ё',
                 'ё' => 'ж',
                 'Ё' => 'Ж',
-                <= 'я' when input >= 'А' => (char)(input + 1),
+                >= 'А' and <= 'я' => (char)(input + 1),
                 _ => input,
             };
         }
